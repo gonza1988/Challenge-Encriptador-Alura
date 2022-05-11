@@ -30,3 +30,120 @@ body{
     height: 48px;
     animation: rotacion var(--time);
 }
+
+main{
+    height: 100%;
+}
+
+.encriptador{
+    margin: 0 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.encriptador_form{
+    flex-basis: calc(65% - 80px);
+}
+
+.text_in{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text_in > textarea{
+    flex-basis: 100%;
+    margin-top: 168px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    color:#0A3871;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    
+    animation: fade_in var(--time);
+}
+
+.text_in > textarea:focus{
+    outline: none
+}
+
+.text_in > textarea::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+.text_in_info{
+    width: 100%;
+    margin-bottom: 72px;
+    position: relative;
+    animation: slide_info var(--time);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.info > p{
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+
+.info > img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.text_in_btns{
+    display: flex;
+    width: 100%;
+}
+
+.text_in_btns > input{
+    flex-basis: 50%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    transform: scale(1);
+    transition: transform 0.2s; 
+}
+
+.text_in_btns > input:hover{
+    transform: scale(1.05);
+}
+
+.text_in_btns > input:first-child{
+    margin-right: 12px;
+    background-color:#0A3871;
+    color: #FFF;
+}
+
+.text_in_btns > input:first-child:active{
+    background-color: #000;
+}
+
+.text_in_btns > input:last-child{
+    margin-left: 12px;
+    background-color:#D8DFE8;
+    color: #0A3871;
+}
+
+.text_in_btns > input:last-child:active{
+    color: #FFF;
+    background-color: #000;
+}
+
