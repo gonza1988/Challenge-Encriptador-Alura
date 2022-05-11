@@ -1,7 +1,7 @@
 ﻿# Challenge-Encriptador-Alura
 
 # Sistema de encriptación
-Autor: Gonzalo Cozzo <gonza007_88@hotmail.com>; v1, 2022-05-11.
+Autor: Gonzalo Cozzo <gonza007_88@hotmail.com>; 2022-05-11.
 
 # Challenge Oracle One
 
