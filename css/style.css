@@ -19,7 +19,6 @@ body{
 
 .header_img{
     position: absolute;
-    /* margin: 40px 0 0 84px; */
 }
 
 .header_img > img{
@@ -28,7 +27,6 @@ body{
     top: 40px;
     width: 31.09px;
     height: 48px;
-    animation: rotacion var(--time);
 }
 
 main{
@@ -64,8 +62,6 @@ main{
     background-color: transparent;
     resize: none;
     border: none;
-    
-    animation: fade_in var(--time);
 }
 
 .text_in > textarea:focus{
@@ -80,7 +76,7 @@ main{
     width: 100%;
     margin-bottom: 72px;
     position: relative;
-    animation: slide_info var(--time);
+
 }
 
 .info{
@@ -119,7 +115,7 @@ main{
     font-size: 16px;
     line-height: 19px;
     transform: scale(1);
-    transition: transform 0.2s; 
+    transition: transform 0.4s; 
 }
 
 .text_in_btns > input:hover{
@@ -163,8 +159,82 @@ main{
     animation: slide_out var(--time);
 }
 
+.content{
+    height: 100%;
+    margin: 40px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.content > p:nth-child(2){
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
 
+.content > p:nth-child(3){
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.text_out_img{
+    text-align: center;
+}
+
+.text_out_img > img{
+    width: 336px;
+    height: 304px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+#texto_out{
+    flex-basis: calc(100% - (67px + 32px));
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color:#495057;
+    background-color: transparent;
+    resize: none;
+    border: none;
+}
+
+#copiar{
+    height: 67px;
+    margin-top: 32px;
+    background-color: #FFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    transform: scale(1);
+    transition: transform 0.2s; 
+}
+
+#copiar:hover{
+    transform: scale(1.05);
+}
+
+#copiar:last-child:active{
+    color: #FFF;
+    background-color: #000;
+}
+
+.invisible{
+    display: none;
+}
 
 footer {
     background-color: #0A3871;
